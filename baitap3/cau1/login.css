@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background-color: lightgreen;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: none;
+  background-color: #e4e4df;
+  border-radius: 5px;
+}
+.btn-submit {
+  padding: 1.5rem;
+  border: none;
+  background-color: lightgreen;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-submit:hover {
+  background-color: pink;
+}

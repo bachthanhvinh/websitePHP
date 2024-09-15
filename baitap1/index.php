@@ -15,17 +15,22 @@
 </html>
 <?php
 // bài 6
-$date = $_POST['date'];
-switch($date){
- case 0 : echo"Thứ 2 <br><br>";break;
- case 1 : echo"Thứ 3 <br><br>";break;
- case 2 : echo"Thứ 4 <br><br>";break;
- case 3 : echo"Thứ 5 <br><br>";break;
- case 4 : echo"Thứ 6 <br><br>";break;
- case 5 : echo"Thứ 7 <br><br>";break;
- case 6 : echo"Thứ 8 <br><br>";break;
- default:
- echo"Không hợp lệ <br><br>";
+$date = $_POST['date'] ??  "";
+
+
+if( $date != ""){
+  switch($date){
+    case 0 : echo"Thứ 2 <br><br>";break;
+    case 1 : echo"Thứ 3 <br><br>";break;
+    case 2 : echo"Thứ 4 <br><br>";break;
+    case 3 : echo"Thứ 5 <br><br>";break;
+    case 4 : echo"Thứ 6 <br><br>";break;
+    case 5 : echo"Thứ 7 <br><br>";break;
+    case 6 : echo"Thứ 8 <br><br>";break;
+    default:
+    echo"Không hợp lệ <br><br>";
+}
+
 }
 
 
